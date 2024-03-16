@@ -1,12 +1,11 @@
 class Solution:
     def numberGame(self, nums: List[int]) -> List[int]:
-        nums_sorted = sorted(nums)
+        nums.sort()
         
-        for i in range(len(nums_sorted)):
-            if i % 2 != 0:
-                temp = nums_sorted[i-1]
-                nums_sorted[i-1] = nums_sorted[i]
-                nums_sorted[i] = temp
+        for i in range(0, len(nums), 2):
+            temp = nums[i+1]
+            nums[i+1] = nums[i]
+            nums[i] = temp
         
-        return nums_sorted
+        return nums
         
