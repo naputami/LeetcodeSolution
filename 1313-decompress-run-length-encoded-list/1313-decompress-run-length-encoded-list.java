@@ -1,26 +1,23 @@
-import java.util.ArrayList;
+import java.util.Arrays;
 class Solution {
     public int[] decompressRLElist(int[] nums) {
-        ArrayList<Integer> a = new ArrayList<Integer>();
+        int resultSize = 0;
         
         for(int i = 0; i < nums.length; i+=2){
-            int freq = nums[i];
-            int val = nums[i+1];
-            
-            int b = 0;
-            
-            while(b < freq){
-                a.add(val);
-                b++;
-            }
+            resultSize += nums[i];
         }
         
-        int[] result = new int[a.size()];
+        int[] result = new int[resultSize];
         
-        for(int i = 0; i < result.length; i++){
-            result[i] = a.get(i);
+        int start = 0;
+        
+        for(int i = 0; i < nums.length; i+=2){
+            Arrays.fill(result, start, start + nums[i], nums[i+1]);
+            start+=nums[i];
         }
         
         return result;
+        
+        
     }
 }
