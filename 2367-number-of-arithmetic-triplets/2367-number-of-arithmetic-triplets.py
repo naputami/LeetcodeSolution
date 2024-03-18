@@ -3,9 +3,10 @@ class Solution:
         count = 0
         
         for i in range(len(nums)):
-            for j in range(i+1, len(nums)):
-                for k in range(j+1, len(nums)):
-                    if nums[j] - nums[i] == diff and nums[k] - nums[j] == diff:
-                        count += 1
+            j = nums[i] + diff
+            k = j + diff
+            
+            if j in nums and k in nums:
+                count += 1
         
         return count
