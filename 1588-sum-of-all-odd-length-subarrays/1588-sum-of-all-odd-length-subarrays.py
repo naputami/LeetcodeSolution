@@ -1,13 +1,14 @@
 class Solution:
     def sumOddLengthSubarrays(self, arr: List[int]) -> int:
-        result = 0
+        prefix_sum = [0] * (len(arr) + 1)
         
         for i in range(len(arr)):
-            j = i
-            while j < len(arr):
-                result += sum(arr[i:j+1])
-                j += 2
+            prefix_sum[i + 1] =  prefix_sum[i] + arr[i]
             
+        result = 0
+        
+        for i in range(1, len(arr) +1, 2):
+            for j in range(len(arr) - i + 1):
+                result += prefix_sum[j+i] - prefix_sum[j]
+        
         return result
-        
-        
