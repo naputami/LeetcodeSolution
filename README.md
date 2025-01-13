@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/naputami/LeetcodeSolution/tree/master/0001-two-sum) |
+| [3476-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/naputami/LeetcodeSolution/tree/master/3476-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/naputami/LeetcodeSolution/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 ## Hash Table
 |  |
@@ -16,5 +17,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Math
 |  |
 | ------- |
+| [3476-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/naputami/LeetcodeSolution/tree/master/3476-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/naputami/LeetcodeSolution/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 <!---LeetCode Topics End-->
